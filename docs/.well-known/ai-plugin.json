@@ -11,10 +11,10 @@
     },
     "api": {
         "type": "openapi",
-        "url": "https://YOUR_DOMAIN/.well-known/openapi.yaml",
+        "url": "https://michael-kurz.github.io/FigmaGptPlugin/.well-known/openapi.yaml",
         "is_user_authenticated": true
     },
-    "logo_url": "https://YOUR_DOMAIN/logo.png",
+    "logo_url": "https://michael-kurz.github.io/FigmaGptPlugin/logo.png",
     "contact_email": "you@yourdomain.com",
     "legal_info_url": "https://yourdomain.com/legal"
 }
