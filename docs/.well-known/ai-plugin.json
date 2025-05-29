@@ -1,0 +1,20 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Figma Direct",
+    "name_for_model": "figma_direct",
+    "description_for_human": "Fetch Figma file & node data via the REST API.",
+    "description_for_model": "Plugin for fetching Figma file and node JSON over the official Figma REST API.",
+    "auth": {
+        "type": "api_key",
+        "in": "header",
+        "name": "X-FIGMA-TOKEN"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://YOUR_DOMAIN/.well-known/openapi.yaml",
+        "is_user_authenticated": true
+    },
+    "logo_url": "https://YOUR_DOMAIN/logo.png",
+    "contact_email": "you@yourdomain.com",
+    "legal_info_url": "https://yourdomain.com/legal"
+}

@@ -1,0 +1,40 @@
+openapi: 3.0.1
+info:
+  title: Figma Direct API
+  version: '1.0'
+servers:
+  - url: https://api.figma.com/v1
+paths:
+  /files/{file_key}:
+    get:
+      summary: Get full document JSON
+      parameters:
+        - name: file_key
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Figma file JSON
+          content:
+            application/json: {}
+  /files/{file_key}/nodes:
+    get:
+      summary: Get specific nodes within a file
+      parameters:
+        - name: file_key
+          in: path
+          required: true
+          schema: { type: string }
+        - name: ids
+          in: query
+          required: true
+          schema:
+            type: string
+            description: Comma-separated node IDs
+      responses:
+        '200':
+          description: Node data JSON
+          content:
+            application/json: {}
+components: {}
